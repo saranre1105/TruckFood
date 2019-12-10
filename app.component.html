@@ -1,0 +1,16 @@
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+</head>
+<nav>
+  <div class="nav-wrapper">
+    <a [routerLink]="['']" class="brand-logo">Orangy</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a [routerLink]="['']">Home</a></li>
+      <li><a [routerLink]="['/trucks']">Orangy Truck List</a></li>
+      <li><a [routerLink]="['/trucks/new']">Orangy Truck Creation</a></li>
+    </ul>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
